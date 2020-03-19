@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_tiempo_transcurrido"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Alarma tiempo real transcurrido" />
+
+    <Button
+        android:id="@+id/btn_rtc"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Alarma reloj en tiempo real elegido:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_elegir_hora"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text="Elegir horario" />
+
+        <TextView
+            android:id="@+id/tv_hora_elegida"
+            android:layout_width="300dp"
+            android:textSize="25dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text_border"
+            android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>
